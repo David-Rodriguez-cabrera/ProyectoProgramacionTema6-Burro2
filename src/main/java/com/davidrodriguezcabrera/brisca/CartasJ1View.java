@@ -31,8 +31,9 @@ public class CartasJ1View extends GridPane{
     int colClic;
     // MUSICA O SONIDO AL TIRAR UNA CARTA
     AudioClip musicaTirarCarta;
-    
+    //SIRVE PARA PONER LAS CARTAS SIEMPRE AL FINAL DEL LABEL
     int contador = 6;
+    //SIRVE PARA CALCULAR EL NUMERO DE CARTAS TOTALES EN EL LABEL
     int contadorArray = 6;
    
     // CREAR Y VER CARTAS DEL J1 POR PANTALLA

@@ -117,10 +117,4 @@ public class Baraja {
         int num = random.nextInt(max-min+1) + min;
         return num;
     }
-
-    
-
-    
-    
-
 }  

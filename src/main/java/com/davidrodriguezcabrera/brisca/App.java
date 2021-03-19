@@ -54,7 +54,7 @@ AudioClip musicaFondo;
         paneRoot.setTop(cartasJ2View);
         
         //INICIR OBJETO Botones CON EL NOMBRE botones PARA ROBAR CARTAS
-        Botones botones = new Botones(mazo, cartasJ1View);
+        Botones botones = new Botones(mazo, cartasJ1View, cartasJ2View);
         //PONER BOTON PARA ROBAR CARTAS A LA DERECHA DE LA ESCENA
         paneRoot.setRight(botones.button);
         

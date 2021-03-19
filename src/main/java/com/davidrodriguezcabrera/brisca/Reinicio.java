@@ -21,13 +21,15 @@ public class Reinicio {
         mazo.getCartaAleatoria(0, 19);
         cartasJ1View.contador = 6;
         cartasJ1View.contadorArray = 6;
+        cartasJ2View.contador = 6;
+        cartasJ2View.contadorArray = 6;
         App.musicaFondo.stop();
         App.musicaFondo.play();
         CartasJ1View cartasJ1ViewReinicio = new CartasJ1View(mazo);
         App.paneRoot.setBottom(cartasJ1ViewReinicio);
         CartasJ2View cartasJ2ViewReinicio = new CartasJ2View(mazo);
         App.paneRoot.setTop(cartasJ2ViewReinicio);
-        Botones botonesReinicio = new Botones(mazo, cartasJ1ViewReinicio);
+        Botones botonesReinicio = new Botones(mazo, cartasJ1ViewReinicio,cartasJ2ViewReinicio);
         App.paneRoot.setRight(botonesReinicio.button);
     }
 }

@@ -31,7 +31,10 @@ public class CartasJ2View extends GridPane{
     int colClic;
     // MUSICA O SONIDO AL TIRAR UNA CARTA
     AudioClip musicaTirarCarta;
-    
+    //SIRVE PARA PONER LAS CARTAS SIEMPRE AL FINAL DEL LABEL
+    int contador = 6;
+    //SIRVE PARA CALCULAR EL NUMERO DE CARTAS TOTALES EN EL LABEL
+    int contadorArray = 6;
     // CREAR Y VER CARTAS DEL J2 POR PANTALLA
     public CartasJ2View(Baraja mazo) {  
         this.mazo = mazo;
@@ -74,7 +77,7 @@ public class CartasJ2View extends GridPane{
           
             this.getChildren().remove(colClic);
             mazo.cartasJ2[colClic] = null;
-            
+            contadorArray = contadorArray -1;
                 
       if (mazo.cartasJ2[colClic] != null){
           for(int x=0; x<7; x++){
