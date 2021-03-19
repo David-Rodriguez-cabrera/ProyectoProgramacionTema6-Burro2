@@ -6,6 +6,7 @@ import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.stage.Stage;
@@ -57,6 +58,8 @@ AudioClip musicaFondo;
         //PONER BOTON PARA ROBAR CARTAS A LA DERECHA DE LA ESCENA
         paneRoot.setRight(botones.button);
         
+        
+        
         //SONIDO FONDO JUEGO
         URL urlmusicaFondo = getClass().getResource("/audio/MusicaFondo.mp3");
         if(urlmusicaFondo != null) {
@@ -69,7 +72,33 @@ AudioClip musicaFondo;
         System.out.println("No se ha encontrado el archivo de audio");
         }
         
-        
+        //Reinicio
+        scene.setOnKeyPressed((KeyEvent event) -> {
+                            switch (event.getCode()) {
+                                case T:
+                                    Reinicio reinicio = new Reinicio(mazo,cartasJ1View,cartasJ2View,this);
+                                    /*System.out.println("Reinicio");
+                                    mazo.numCartas = 0;
+                                    mazo.posCartaACoger=0;
+                                    mazo.posCartaACogerJ1=0;
+                                    mazo.posCartaACogerJ2=0;
+                                    mazo.barajarCartas();
+                                    mazo.mostrarBaraja();
+                                    mazo.getCartaAleatoria(0, 19);
+                                    cartasJ1View.contador = 6;
+                                    cartasJ1View.contadorArray = 6;
+                                    musicaFondo.stop();
+                                    musicaFondo.play();
+                                    CartasJ1View cartasJ1ViewReinicio = new CartasJ1View(mazo);
+                                    paneRoot.setBottom(cartasJ1ViewReinicio);
+                                    CartasJ2View cartasJ2ViewReinicio = new CartasJ2View(mazo);
+                                    paneRoot.setTop(cartasJ2ViewReinicio);
+                                    Botones botonesReinicio = new Botones(mazo, cartasJ1ViewReinicio);
+                                    paneRoot.setRight(botonesReinicio.button);*/
+                                    
+                                                                break;
+                            }
+        });
     }
     
     public static void main(String[] args) {

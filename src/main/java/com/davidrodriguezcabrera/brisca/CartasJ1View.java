@@ -34,12 +34,13 @@ public class CartasJ1View extends GridPane{
     
     int contador = 6;
     int contadorArray = 6;
-    
+   
     // CREAR Y VER CARTAS DEL J1 POR PANTALLA
     public CartasJ1View(Baraja mazo) {  
         this.mazo = mazo;
        
        this.setStyle("-fx-grid-lines-visible: true; -fx-background-color : white");
+       
         for(int x=0; x<7; x++){
            
         numCartasPantalla = mazo.cogerCarta();
