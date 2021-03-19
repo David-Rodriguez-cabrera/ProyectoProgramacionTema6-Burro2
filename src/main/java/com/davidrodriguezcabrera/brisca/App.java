@@ -76,25 +76,8 @@ AudioClip musicaFondo;
         scene.setOnKeyPressed((KeyEvent event) -> {
                             switch (event.getCode()) {
                                 case T:
+                                    //INICIAR OBJETO PARA REINICIAR
                                     Reinicio reinicio = new Reinicio(mazo,cartasJ1View,cartasJ2View,this);
-                                    /*System.out.println("Reinicio");
-                                    mazo.numCartas = 0;
-                                    mazo.posCartaACoger=0;
-                                    mazo.posCartaACogerJ1=0;
-                                    mazo.posCartaACogerJ2=0;
-                                    mazo.barajarCartas();
-                                    mazo.mostrarBaraja();
-                                    mazo.getCartaAleatoria(0, 19);
-                                    cartasJ1View.contador = 6;
-                                    cartasJ1View.contadorArray = 6;
-                                    musicaFondo.stop();
-                                    musicaFondo.play();
-                                    CartasJ1View cartasJ1ViewReinicio = new CartasJ1View(mazo);
-                                    paneRoot.setBottom(cartasJ1ViewReinicio);
-                                    CartasJ2View cartasJ2ViewReinicio = new CartasJ2View(mazo);
-                                    paneRoot.setTop(cartasJ2ViewReinicio);
-                                    Botones botonesReinicio = new Botones(mazo, cartasJ1ViewReinicio);
-                                    paneRoot.setRight(botonesReinicio.button);*/
                                     
                                                                 break;
                             }
